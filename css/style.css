@@ -65,7 +65,17 @@ iframe {
 
 
 /* Contact */
-.conatct_page {
+.conatctpageadmin {
+  width: 100%;
+  height: 90%;
+  border-radius: 50px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+.conatctpagedesigner {
   width: 100%;
   height: 90%;
   border-radius: 50px;
@@ -75,13 +85,13 @@ iframe {
 }
 
 #adminContact {
-  background-color: #f0f0f0;
+  background-color: #2E6749;
   padding: 20px;
   margin-top: 10px;
 }
 
 #designerContact {
-  background-color: #e8e8e8;
+  background-color: #f0f0f0;
   padding: 20px;
   border-radius: 8px;
 }
@@ -102,6 +112,6 @@ iframe {
 }
 /* zweven */
 .my-custom-button:hover {
-  background-color: #1a1a1a;
+  background-color: #121615;
 }
 
