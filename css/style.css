@@ -119,3 +119,62 @@ line-height: 1.6;
 background-color: #121615;
 }
 
+
+.cybersecurityawareness-foto {
+  width: 100%;
+  height: 250px;
+}
+
+
+
+/* service items */
+.service-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa; 
+  border: 1px solid #c2c7cc; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.service-item h2 {
+  color: #2E6749; 
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  color: #121615; 
+  font-size: 1rem;
+}
+
+.service-item a {
+  text-decoration: none; 
+  color: #2E6749; 
+}
+
+.service-item figure {
+  margin: 0; 
+  position: relative; 
+}
+
+.service-item img {
+  width: 100%; 
+  border-radius: 5px; 
+}
+
+.service-item figcaption {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  font-size: 0.75rem; 
+  padding: 5px; 
+  border-radius: 3px; 
+}
+
+.service-item:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+}
