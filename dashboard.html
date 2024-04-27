@@ -96,7 +96,7 @@
         </tbody>
       </table>
     </div>
-  </main>
+
 
 
   <!-- Bootstrap core JavaScript
@@ -129,7 +129,7 @@
     categories.forEach(category => {
       const entry = {
         category: category,
-        count: faker.number.int({ min: 50, max: 5000 }),
+        count: faker.number.int({ min: 50, max: 2500 }),
         severity: faker.helpers.arrayElement(['Low', 'Medium', 'High']),
         status: faker.helpers.arrayElement(['Active', 'Inactive']),
       };
@@ -173,39 +173,39 @@
         }
       }
     });
-    
-    // 2nd graph
-    /* 
-    var networksCtx = document.getElementById("networks");
-    var networksChart = new Chart(networksCtx, {
-      // type: 'bar',
-      type: 'line',
-      data: {
-        labels: data.map(cat => cat.category),
-        datasets: [{
-          data: data.map(cat => cat.count),
-          lineTension: 0,
-          backgroundColor: 'transparent',
-          borderColor: '#007bff',
-          borderWidth: 4,
-          pointBackgroundColor: '#007bff'
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: false
-            }
-          }]
-        },
-        legend: {
-          display: false,
-        }
-      }
-    }); 
-    */
   </script>
+  <hr>
+<section>
+  <h2 class="text-uppercase display-8">Contact</h2>
+  <address>
+    UnityNet<br>
+    Email: <a href="mailto:mail.voorbeeld@ap.be">mail.voorbeeld@ap.be</a><br>
+    Phone: +32 123 / 45 67 89
+  </address>
+  <ul class="list-inline socials">
+    <li class="list-inline-item">
+      <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+        <i class="bi bi-youtube fs-3"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram fs-3"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook fs-3"></i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+        <i class="bi bi-twitter fs-3"></i>
+      </a>
+    </li>
+  </ul>
+</section>
+</main>
     <footer class="text-center text-light p-3 bg-dark ">&copy;2024 Mustafa AL-Karawi G_1SNB_A1</footer>
 </body>
 </html>
