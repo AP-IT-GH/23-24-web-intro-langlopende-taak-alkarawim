@@ -127,12 +127,12 @@ background-color: #121615;
 
 
 
-/* service items */
+/* service items - Overzicht Diensten */
 .service-item {
   padding: 20px;
   margin-bottom: 20px;
   background-color: #f8f9fa; 
-  border: 1px solid #c2c7cc; 
+  border: 1px solid #c2c7cce0; 
   border-radius: 5px; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
   transition: transform 0.3s ease-in-out; 
@@ -177,4 +177,56 @@ background-color: #121615;
 .service-item:hover {
   transform: translateY(-5px); 
   box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+}
+
+/* Cybersecurity Awareness sections */
+.cybersecurity-awareness {
+  background-color: #ffffff; 
+  color: #121615; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cybersecurity-awareness .atmospheric {
+  padding: 40px 10px; 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/cybersecurityawareness.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+.cybersecurity-awareness section {
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.cybersecurity-awareness h2, .cybersecurity-awareness h3 {
+  color: #2E6749; 
+}
+
+.cybersecurity-awareness ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+
+.cybersecurity-awareness p {
+  line-height: 1.6;
+}
+
+.cybersecurity-awareness a {
+  color: #0011ff;
+  text-decoration: none;
+}
+
+.cybersecurity-awareness a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cybersecurity-awareness {
+    padding: 10px;
+  }
+
+  .cybersecurity-awareness section {
+    padding: 15px;
+    margin: 10px;
+  }
 }
