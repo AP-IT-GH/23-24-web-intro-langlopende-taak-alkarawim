@@ -32,7 +32,7 @@ article, .embed-responsive {
   padding: 25px;
 }
 
-.embed-responsive iframe + iframe {
+.embed-responsive iframe + iframe{
 margin-top: 2rem
 }
 
@@ -220,13 +220,44 @@ background-color: #121615;
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .cybersecurity-awareness {
-    padding: 10px;
-  }
 
-  .cybersecurity-awareness section {
-    padding: 15px;
-    margin: 10px;
+  /* Threat intelligence Services css styles */
+  .threat-intelligence-services {
+    background-color: #ffffff; 
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
   }
-}
+  
+  .threat-intelligence-services .atmospheric {
+    padding: 50px 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/threatintelligenceservices.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .threat-intelligence-services section {
+    margin: 20px auto;
+  }
+  
+  .threat-intelligence-services h2, .threat-intelligence-services h3, .threat-intelligence-services h4 {
+    color: #2E6749; 
+  }
+  
+  .threat-intelligence-services ul {
+    padding-left: 20px;
+  }
+  
+  .threat-intelligence-services li {
+    margin-bottom: 10px;
+  }
+  
+  .threat-intelligence-services a {
+    color: #007bff; 
+    text-decoration: none; 
+  }
+  
+  .threat-intelligence-services a:hover {
+    text-decoration: underline; 
+  }
+  
+  
