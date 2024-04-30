@@ -79,26 +79,13 @@ color: #ffffff;
 
 }
 
-.conatctpagedesigner {
-width: 100%;
-height: 90%;
-border-radius: 50px;
-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-padding: 10px;
-
-}
-
 #adminContact {
 background-color: #2E6749;
 padding: 20px;
 margin-top: 10px;
 }
 
-#designerContact {
-background-color: #f0f0f0;
-padding: 20px;
-border-radius: 8px;
-}
+
 
 
 /* button */
