@@ -40,9 +40,6 @@
             <li><a class="dropdown-item" href="/netwerkbeveiliging.html">Netwerkbeveiliging</a></li>
             <li><a class="dropdown-item" href="/schaalbaarheid.html">Schaalbaarheid</a></li>
             <li><a class="dropdown-item" href="/prestatieoptimalisatie.html">Prestatieoptimalisatie</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
             <li><a class="dropdown-item" href="/beheerenmonitoring.html">Beheer en monitoring</a></li>
           </ul>
         </li>
@@ -119,7 +116,7 @@
     import { faker } from 'https://esm.sh/@faker-js/faker';
 
     // Set seed so that we always get the same data generated
-    faker.seed(123);
+   // faker.seed(123);
 
     const data = [];
     const categories = ['Firewall', 'Intrusion Detection System', 'Antivirus', 'VPN', 'Access Control'];
@@ -127,7 +124,7 @@
     categories.forEach(category => {
       const entry = {
         category: category,
-        count: faker.number.int({ min: 50, max: 2500 }),
+        count: faker.number.int({ min: 50, max: 5000 }),
         severity: faker.helpers.arrayElement(['Low', 'Medium', 'High']),
         status: faker.helpers.arrayElement(['Active', 'Inactive']),
       };

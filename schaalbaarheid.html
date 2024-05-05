@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnityNet Schaalbaarheid</title>
+  <!-- reset.css -->
+  <link href="./css/reset.css" rel="reset">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <!-- Bootstrap CSS icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Mijn eigen geschreven css voor jouw html-bestand -->
+  <link href="./css/style.css" rel="stylesheet">
+  <!-- Map -->
+  <link href="./css/mapstyle.css" rel="stylesheet">
+  <script src="./js/schaalbaarheidmap.js" defer></script>
+  <!--Leaflet’s -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+</head>
+<body>
+      <!-- navbar -->
+      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+         <a href="#" class="navbar-brand">
+           <svg class="bi me-2" width="30" height="32" role="img"></svg>
+           <img src="./assets/images/logo/logo.png" alt="Logo" width="40" height="35">UnityNet</a>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a class="nav-link px-2 text-success-emphasis" href="/index.html">Home</a></li>
+            <li><a class="nav-link px-2 text-white" href="/dashboard.html">Dashboard</a></li>
+            <li><a class="nav-link px-2 text-white" href="/overzichtdiensten.html">Overzicht Diensten</a></li>
+            <li><a class="nav-link px-2 text-white" href="/contact.html">Contact</a></li>
+            <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle px-2 text-white" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" href="/overzichtdiensten.html">Diensten</a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="/cybersecurityawareness.html">Cybersecurity Awareness</a></li>
+             <li><a class="dropdown-item" href="/threatintelligenceservices.html">Threat Intelligence Services</a></li>
+             <li><a class="dropdown-item" href="/netwerkbeveiliging.html">Netwerkbeveiliging</a></li>
+             <li><a class="dropdown-item" href="/schaalbaarheid.html">Schaalbaarheid</a></li>
+             <li><a class="dropdown-item" href="/prestatieoptimalisatie.html">Prestatieoptimalisatie</a></li>
+             <li><a class="dropdown-item" href="/beheerenmonitoring.html">Beheer en monitoring</a></li>
+             </ul>
+           </li>
+         </ul>
+         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+             <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Zoeken..."
+               aria-label="Search">
+         </form>
+ 
+         <div class="text-end">
+             <button type="button" class="btn btn-success me-2">Login</button>
+         </div>
+         </div>
+     </nav>
+     <div class="schaalbaarheid">
+                <!-- header -->
+          <header class="container-fluid text-center atmospheric">
+             <h1 class="py-5">Schaalbaarheid</h1>
+          </header>
+            
+          <!-- main -->
+ 
+        <main class="container">
+          <!-- map -->
+         <section id="schaalbaarheidmap" class="row">
+            <div id="schaalbaarheidmappcss"></div>
+         </section> 
+            <section>
+                <article class="article-content">
+                    <h2 class="text-center">Groeien zonder grenzen</h2>
+                    <p>Schaalbaarheid verwijst naar het vermogen van het netwerk om te groeien en een toegenomen vraag te beheren zonder de prestaties of beveiliging in gevaar te brengen. Een schaalbaar netwerk kan efficiënt meer gebruikers, apparaten of gegevensdoorvoer accommoderen indien nodig. Ontwerpen voor schaalbaarheid omvat het overwegen van toekomstige groei in netwerkplanning en -implementatie, zodat het netwerk kan uitbreiden in termen van grootte, bandbreedte of verwerkingscapaciteit.
+                    Ontdek strategieën voor het efficiënt schalen van uw netwerk, inclusief overwegingen voor hardware, software en architectuur. Leer over de uitdagingen van het opschalen naar boven of naar buiten en hoe u tijdens de groei prestaties en beveiliging kunt handhaven.
+                    </p>
+                </article>
+            </section>
+                <article class="article-content">
+                    <h3>Fundamentele Overwegingen en Implementatiepraktijken</h3>
+                    <p>
+                        Netwerkschaalbaarheid is van cruciaal belang voor het succes van moderne technologiegerichte ondernemingen. In het digitale tijdperk, waarin bedrijven en organisaties afhankelijk zijn van constante connectiviteit en real-time data-uitwisseling, speelt het vermogen van een netwerk om zich aan te passen aan fluctuerende capaciteitsvereisten een sleutelrol. Hieronder verkennen we de kernaspecten van netwerkschaalbaarheid, inclusief de uitdagingen en strategieën voor een effectieve implementatie.<br>
+                       <br>Definitie van Netwerkschaalbaarheid
+                        Netwerkschaalbaarheid verwijst naar het vermogen van een netwerk om adequaat te groeien en zich aan te passen aan de veranderende vraag zonder dat dit ten koste gaat van de prestaties. Dit kan inhouden dat het netwerk zowel fysiek als virtueel in capaciteit groeit, afhankelijk van de behoeften van de organisatie. 
+                    </p>
+                </article>
+            </section>
+            <section>
+                <article class="article-content">
+                    <h4>Uitdagingen bij Netwerkschaalbaarheid</h4>
+                    <ul>
+                        <li>Complexiteit van Beheer: Naarmate het netwerk groeit, wordt het beheer complexer. Dit vereist geavanceerde beheertools en technieken.</li>
+                        <li>Kostenbeheersing: Schaalbaarheid kan duur zijn. Het toevoegen van fysieke hardware of het uitbreiden van infrastructuur in de cloud brengt significante kosten met zich mee.</li>
+                        <li>Behoud van Performance: Schaalvergroting moet efficiënt gebeuren om ervoor te zorgen dat de netwerkprestaties niet worden belemmerd door de toegevoegde capaciteit.</li>
+                    </ul>
+                </article>
+            </section>
+          <hr>
+          <section>
+            <h2 class="text-uppercase display-8">Contact</h2>
+            <address>
+              UnityNet<br>
+              Email: <a href="mailto:mail.voorbeeld@ap.be">mail.voorbeeld@ap.be</a><br>
+              Phone: +32 123 / 45 67 89
+            </address>
+            <ul class="list-inline socials">
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                  <i class="bi bi-youtube fs-3"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                  <i class="bi bi-instagram fs-3"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                  <i class="bi bi-facebook fs-3"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                  <i class="bi bi-twitter fs-3"></i>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          </main>
+      </div>
+    </div>
+<footer class="text-center text-light p-3 bg-dark ">&copy;2024 Mustafa AL-Karawi G_1SNB_A1</footer>
+</body>
+</html>

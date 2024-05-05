@@ -166,7 +166,7 @@ background-color: #121615;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
 }
 
-/* Cybersecurity Awareness sections */
+/* Cybersecurity Awareness page */
 .cybersecurity-awareness {
   background-color: #ffffff; 
   color: #121615; 
@@ -189,7 +189,6 @@ background-color: #121615;
 }
 
 .cybersecurity-awareness ul {
-  list-style-type: none;
   padding-left: 20px;
 }
 
@@ -208,7 +207,7 @@ background-color: #121615;
 }
 
 
-  /* Threat intelligence Services css styles */
+  /* Threat intelligence Services css styles page */
   .threat-intelligence-services {
     background-color: #ffffff; 
     color: #333; 
@@ -247,11 +246,96 @@ background-color: #121615;
     text-decoration: underline; 
   }
   
-
-
+  /* Threat intelligence Services Iframe */
   .threatintelligence-responsive {
     border-radius: 50px;
     box-shadow: 0 6px 10px rgb(0, 0, 0);
     padding: 25px;
   }
 
+  /* Netwerk Beveiliging css styles page */
+  .netwerkbeveiliging {
+    background-color: #ffffff; 
+    color: #121615; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .netwerkbeveiliging .atmospheric {
+    padding: 40px 10px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/networksecurity.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+  }
+  .netwerkbeveiliging section {
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  
+  .netwerkbeveiliging h2, .netwerkbeveiliging h3, .netwerkbeveiliging h4 {
+    color: #2E6749; 
+  }
+  
+  .netwerkbeveiliging ul {
+    padding-left: 20px;
+  }
+  
+  .netwerkbeveiliging li {
+    margin-bottom: 10px;
+  }
+  
+  .netwerkbeveiliging p {
+    line-height: 1.6;
+  }
+  
+  .netwerkbeveiliging a {
+    color: #0011ff;
+    text-decoration: none;
+  }
+  
+  .netwerkbeveiliging a:hover {
+    text-decoration: underline;
+  }
+
+
+    /* Schaalbaarheid css styles page */
+    .schaalbaarheid {
+      background-color: #ffffff; 
+      color: #121615; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .schaalbaarheid .atmospheric {
+      padding: 40px 10px; 
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/schaalbaarheid.jpg') no-repeat center center;
+      background-size: cover;
+      color: #ffffff;
+    }
+    .schaalbaarheid section {
+      margin: 20px auto;
+      max-width: 100%;
+    }
+    
+    .schaalbaarheid h2, .schaalbaarheid h3, .schaalbaarheid h4 {
+      color: #2E6749; 
+    }
+    
+    .schaalbaarheid ul {
+      padding-left: 20px;
+    }
+    
+    .schaalbaarheid li {
+      margin-bottom: 10px;
+    }
+    
+    .schaalbaarheid p {
+      line-height: 1.6;
+    }
+    
+    .schaalbaarheid a {
+      color: #0011ff;
+      text-decoration: none;
+    }
+    
+    .schaalbaarheid a:hover {
+      text-decoration: underline;
+    }
