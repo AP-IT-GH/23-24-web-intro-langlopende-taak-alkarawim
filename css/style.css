@@ -383,3 +383,47 @@ background-color: #121615;
     .prestatieoptimalisatie a:hover {
       text-decoration: underline;
     }
+
+
+        
+    /* Beheeren Monitoring css styles page */
+    .beheerenmonitoring {
+      background-color: #ffffff; 
+      color: #121615; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .beheerenmonitoring .atmospheric {
+      padding: 40px 10px; 
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/beheermonitoring.jpg') no-repeat center center;
+      background-size: cover;
+      color: #ffffff;
+    }
+    .beheerenmonitoring section {
+      margin: 20px auto;
+      max-width: 100%;
+    }
+    
+    .beheerenmonitoring h2, .beheerenmonitoring h3, .beheerenmonitoring h4 {
+      color: #2E6749; 
+    }
+    
+    .beheerenmonitoring p {
+      line-height: 1.6;
+    }
+    
+    .beheerenmonitoring a {
+      color: #0011ff;
+      text-decoration: none;
+    }
+    
+    .beheerenmonitoring a:hover {
+      text-decoration: underline;
+    }
+
+
+    .bmbeheerenmonitoring {
+      border-radius: 50px;
+      box-shadow: 0 6px 10px rgb(0, 0, 0);
+      padding: 20px;
+      }
