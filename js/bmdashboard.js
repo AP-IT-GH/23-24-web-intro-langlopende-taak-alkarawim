@@ -28,7 +28,7 @@ var memoryUsageChart = new Chart(ctx2, {
     data: {
         labels: ['maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag', 'Zondag'],
         datasets: [{
-            label: 'Memory Usage (GB)',
+            label: 'Geheugengebruik (GB)',
             data: [3, 4, 2, 5, 6, 3, 4],
             backgroundColor: 'rgba(153, 102, 255, 0.2)',
             borderColor: 'rgba(153, 102, 255, 1)',
