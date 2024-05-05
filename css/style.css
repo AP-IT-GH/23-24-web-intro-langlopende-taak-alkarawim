@@ -339,3 +339,47 @@ background-color: #121615;
     .schaalbaarheid a:hover {
       text-decoration: underline;
     }
+
+    
+    /* prestatieoptimalisatie css styles page */
+    .prestatieoptimalisatie {
+      background-color: #ffffff; 
+      color: #121615; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .prestatieoptimalisatie .atmospheric {
+      padding: 40px 10px; 
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/prestatieoptimalisatie.jpg') no-repeat center center;
+      background-size: cover;
+      color: #ffffff;
+    }
+    .prestatieoptimalisatie section {
+      margin: 20px auto;
+      max-width: 100%;
+    }
+    
+    .prestatieoptimalisatie h2, .prestatieoptimalisatie h3, .prestatieoptimalisatie h4 {
+      color: #2E6749; 
+    }
+    
+    .prestatieoptimalisatie ul {
+      padding-left: 20px;
+    }
+    
+    .prestatieoptimalisatie li {
+      margin-bottom: 10px;
+    }
+    
+    .prestatieoptimalisatie p {
+      line-height: 1.6;
+    }
+    
+    .prestatieoptimalisatie a {
+      color: #0011ff;
+      text-decoration: none;
+    }
+    
+    .prestatieoptimalisatie a:hover {
+      text-decoration: underline;
+    }
