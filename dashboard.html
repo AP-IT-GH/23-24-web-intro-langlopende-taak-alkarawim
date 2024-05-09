@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UnityNet Dashboard</title>
   <!-- reset.css -->
-  <link href="./css/reset.css" rel="reset">
+  <link href="./css/reset.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
@@ -16,10 +16,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Mijn eigen geschreven css voor jouw html-bestand -->
   <link href="./css/style.css" rel="stylesheet">
+  
+  <!-- JS --> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+  <script src="/js/popper.min.js"></script>
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script type="module" src="./js/dashboard.js"></script>
 </head>
-
 <body>
-
   <!-- navbar -->
   <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container">
@@ -27,20 +36,20 @@
         <svg class="bi me-2" width="30" height="32" role="img"></svg>
         <img src="./assets/images/logo/logo.png" alt="Logo" width="40" height="35">UnityNet</a>
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a class="nav-link px-2 text-success-emphasis" href="/index.html">Home</a></li>
-        <li><a class="nav-link px-2 text-white" href="/dashboard.html">Dashboard</a></li>
-        <li><a class="nav-link px-2 text-white" href="/overzichtdiensten.html">Overzicht Diensten</a></li>
-        <li><a class="nav-link px-2 text-white" href="/contact.html">Contact</a></li>
+        <li><a class="nav-link px-2 text-white" href="./index.html">Home</a></li>
+        <li><a class="nav-link px-2 text-success-emphasis" href="./dashboard.html">Dashboard</a></li>
+        <li><a class="nav-link px-2 text-white" href="./overzichtdiensten.html">Overzicht Diensten</a></li>
+        <li><a class="nav-link px-2 text-white" href="./contact.html">Contact</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle px-2 text-white" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false" href="/overzichtdiensten.html">Diensten</a>
+            aria-expanded="false" href="./overzichtdiensten.html">Diensten</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/cybersecurityawareness.html">Cybersecurity Awareness</a></li>
-            <li><a class="dropdown-item" href="/threatintelligenceservices.html">Threat Intelligence Services</a></li>
-            <li><a class="dropdown-item" href="/netwerkbeveiliging.html">Netwerkbeveiliging</a></li>
-            <li><a class="dropdown-item" href="/schaalbaarheid.html">Schaalbaarheid</a></li>
-            <li><a class="dropdown-item" href="/prestatieoptimalisatie.html">Prestatieoptimalisatie</a></li>
-            <li><a class="dropdown-item" href="/beheerenmonitoring.html">Beheer en monitoring</a></li>
+            <li><a class="dropdown-item" href="./cybersecurityawareness.html">Cybersecurity Awareness</a></li>
+            <li><a class="dropdown-item" href="./threatintelligenceservices.html">Threat Intelligence Services</a></li>
+            <li><a class="dropdown-item" href="./netwerkbeveiliging.html">Netwerkbeveiliging</a></li>
+            <li><a class="dropdown-item" href="./schaalbaarheid.html">Schaalbaarheid</a></li>
+            <li><a class="dropdown-item" href="./prestatieoptimalisatie.html">Prestatieoptimalisatie</a></li>
+            <li><a class="dropdown-item" href="./beheerenmonitoring.html">Beheer en monitoring</a></li>
           </ul>
         </li>
       </ul>
@@ -54,7 +63,6 @@
       </div>
     </div>
   </nav>
-
   <!-- header -->
   <header class="container-fluid text-center atmospheric">
     <h1 class="py-5">Dashboard</h1>
@@ -74,10 +82,7 @@
         </button>
       </div>
     </div>
-
     <canvas class="my-4" id="categories" width="900" height="380"></canvas>
-    <!-- <canvas class="my-4" id="networks" width="900" height="380"></canvas> -->
-
     <h2>Dashboard data</h2>
     <div class="table-responsive mb-4">
       <table id="dataTable" class="table table-striped table-sm">
@@ -93,82 +98,7 @@
           <!-- generated in JS -->
         </tbody>
       </table>
-    </div>
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-  <script src="/js/popper.min.js"></script>
-
-  <!-- Icons -->
-  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-  <script>
-    feather.replace()
-  </script>
-
-  <!-- Graphs -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-  <!-- Faker API -->
-  <!-- https://fakerjs.dev/guide/usage -->
-  <script type="module">
-    import { faker } from 'https://esm.sh/@faker-js/faker';
-
-    // Set seed so that we always get the same data generated
-   // faker.seed(123);
-
-    const data = [];
-    const categories = ['Firewall', 'Intrusion Detection System', 'Antivirus', 'VPN', 'Access Control'];
-
-    categories.forEach(category => {
-      const entry = {
-        category: category,
-        count: faker.number.int({ min: 50, max: 5000 }),
-        severity: faker.helpers.arrayElement(['Low', 'Medium', 'High']),
-        status: faker.helpers.arrayElement(['Active', 'Inactive']),
-      };
-      data.push(entry);
-    });
-
-    const tableBody = document.querySelector("#dataTable").querySelector('tbody');
-    tableBody.innerHTML = data.map(cat => `<tr>
-      <td>${cat.category}</td>
-      <td>${cat.count}</td>
-      <td>${cat.severity}</td>
-      <td>${cat.status}</td>
-    </tr>`).join("\n")
-
-    // 1st graph
-    var categoriesCtx = document.getElementById("categories");
-    var categoriesChart = new Chart(categoriesCtx, {
-      type: 'bar',
-      // type: 'line',
-      data: {
-        labels: data.map(cat => cat.category),
-        datasets: [{
-          data: data.map(cat => cat.count),
-          lineTension: 0,
-          backgroundColor: 'transparent',
-          borderColor: '#007bff',
-          borderWidth: 4,
-          pointBackgroundColor: '#007bff'
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: false
-            }
-          }]
-        },
-        legend: {
-          display: false,
-        }
-      }
-    });
-  </script>
+    </div>    
   <hr>
 <section>
   <h2 class="text-uppercase display-8">Contact</h2>
